@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: result-app
+  namespace: default
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: result-app
+  template:
+    metadata:
+      labels:
+        app: result-app
+    spec:
+      containers:
+      - name: result-app
+        image: kodekloud/examplevotingapp_result:v1
+        imagePullPolicy: Always
