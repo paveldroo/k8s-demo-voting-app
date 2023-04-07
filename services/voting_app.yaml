@@ -2,7 +2,9 @@ apiVersion: v1
 kind: Service
 metadata:
   name: voting-app
-  namespace: default
+  labels:
+    name: voting-app-service
+    app: demo-voting-app
 spec:
   type: NodePort
   selector:

@@ -12,7 +12,7 @@ spec:
     metadata:
       name: voting-app
       labels:
-        name: voting-app
+        name: voting-app-pod
         app: demo-voting-app
     spec:
       containers:

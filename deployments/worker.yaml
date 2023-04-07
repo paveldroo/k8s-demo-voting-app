@@ -12,7 +12,7 @@ spec:
     metadata:
       name: result-app
       labels:
-        name: worker
+        name: worker-pod
         app: demo-voting-app
     spec:
       containers:
