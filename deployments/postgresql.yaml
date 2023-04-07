@@ -1,16 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: postgresql
-  namespace: default
+  name: postgres-deploy
+  labels:
+    name: postgres-deploy
+    app: demo-voting-app
 spec:
   replicas: 1
   selector:
     matchLabels:
-      name: postgresql
+      name: postgresql-pod
+      app: demo-voting-app
   template:
     metadata:
-      name: postgresql
+      name: postgresql-pod
       labels:
         name: postgresql-pod
         app: demo-voting-app
