@@ -7,10 +7,10 @@ metadata:
     app: demo-voting-app
 spec:
   type: NodePort
-  selector:
-    name: voting-app-pod
-    app: demo-voting-app
   ports:
   - port: 80
     targetPort: 80
-    nodePort: 30002
+    nodePort: 30004
+  selector:
+    name: voting-app-pod
+    app: demo-voting-app

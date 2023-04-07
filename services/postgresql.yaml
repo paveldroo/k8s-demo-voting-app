@@ -6,9 +6,9 @@ metadata:
     name: postgresql-service
     app: demo-voting-app
 spec:
-  selector:
-    name: postgresql-pod
-    app: demo-voting-app
   ports:
   - port: 5432
     targetPort: 5432
+  selector:
+    name: postgresql-pod
+    app: demo-voting-app
