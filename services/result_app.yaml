@@ -8,7 +8,8 @@ metadata:
 spec:
   type: NodePort
   selector:
-    name: result-app
+    name: result-app-pod
+    app: demo-voting-app
   ports:
   - port: 80
     targetPort: 80
