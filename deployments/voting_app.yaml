@@ -10,6 +10,7 @@ spec:
       name: voting-app
   template:
     metadata:
+      name: voting-app
       labels:
         name: voting-app
         app: demo-voting-app

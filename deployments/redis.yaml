@@ -10,6 +10,7 @@ spec:
       name: redis
   template:
     metadata:
+      name: redis
       labels:
         name: redis
         app: demo-voting-app
