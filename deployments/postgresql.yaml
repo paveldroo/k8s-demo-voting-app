@@ -7,11 +7,12 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      app: postgresql
+      name: postgresql
   template:
     metadata:
       labels:
-        app: postgresql
+        name: postgresql
+        app: demo-voting-app
     spec:
       containers:
       - name: postgresql
