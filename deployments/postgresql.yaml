@@ -21,3 +21,9 @@ spec:
         ports:
           - containerPort: 5432
         imagePullPolicy: Always
+#        Should use secrets from vault, but this is out of scope of the current lerning example
+        env:
+          - name: POSTGRES_USER
+            value: "postgres"
+          - name: POSTGRES_PASSWORD
+            value: "postgres"
